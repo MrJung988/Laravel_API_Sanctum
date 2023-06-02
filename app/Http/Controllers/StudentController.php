@@ -11,4 +11,13 @@ class StudentController extends Controller
     {
         return Student::all();
     }
+
+    public function show($id)
+    {
+        return Student::find($id);
+    }
+
+    public function store()
+    {
+    }
 }
